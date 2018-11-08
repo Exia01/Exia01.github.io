@@ -1,14 +1,16 @@
-header {
-    background-image: url(../img/man.jpg);
-    background-size: cover;
-    background-position: center;
-    min-height: 1000px;
+body {
+    font-family: 'Roboto', sans-serif, Cambria, Cochin, Georgia, serif;
 }
 
-/* vw is a relation unit, the smaller the screen the smaller the top  */
-.section {
-    padding-top: 4vw;
-    padding-bottom: 4vw;
+
+nav ul a:hover {
+    color: lightskyblue;
+}
+
+.pro-title {
+    padding: 1.9rem;
+    /* padding: 50px; */
+    background-color: #424242 !important;
 }
 
 
@@ -23,7 +25,20 @@ header {
 }
 
 @media screen and (max-width:670px) {
-    header {
-        min-height: 500px;
+    nav .container>a {
+        font-size: 1.9rem;
     }
 }
+
+/* Icons being on the same line as text
+.fa,
+.fab,
+.fal,
+.far,
+.fas {
+    line-height: inherit;
+} */
+/* nav .brand-logo {
+                        font-size: 1.7rem;
+                    } */
+/* vw is a relation unit, the smaller the screen the smaller the top  */

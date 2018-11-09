@@ -28,14 +28,16 @@
                 </a>
                 <ul class="right hide-on-med-and-down">
                     <li><a class="hvr-hang" href="#">Resume</a></li>
-                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="https://www.linkedin.com/in/js-gonzalez/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/Exia01" target="_blank">Github</a></li>
                     <li><a href="#">Contact</a></li>
 
                     <!-- Mobile Menu -->
                 </ul>
                 <ul class="sidenav grey darken-2" id="mobile-menu">
                     <li><a href="#">Resume</a></li>
-                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="https://www.linkedin.com/in/js-gonzalez/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/Exia01" target="_blank">Github</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
@@ -48,51 +50,43 @@
     </section>
     <!-- Projects -->
     <section class="container section scrollspy" id="projects">
+        <h3 class="title-info center-align ">Projects</h3>
+        <hr>
         <div class="row">
-            <!-- column smalls and up 12 columns and large takes 4 columns   -->
-            <div class="col s12 l4">
-                <!-- the responsive image takes the size of the columns -->
-                <img src="./img/portrait.jpg" alt="" class="responsive-img materialboxed">
-                <!-- Material boxed  -->
+            <div class="col s12 l4 project-item-caption">
+                <a class="modal-trigger " href="#todo-app"> <img src="./img/projects/nodeTodoApp/Todo_Front_Shot.png" alt=""
+                        class="responsive-img"></a>
             </div>
-            <!--offset in large screens by 1 column   -->
-            <div class="col s12 l6 offset-l1">
-                <h2 class="grey-text text-darken-4">Portraits</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit
-                    elit nec, tincidunt orci.</p>
+            <div class="project-item-caption-content text-center text-white">
+                <i class="fa fa-search-plus fa-3x"></i>
             </div>
         </div>
-        <div class="row">
-            <!-- Takes the picture push image in lg screens by 7  -->
-            <div class="col s12 l4 offset-l1 push-l7">
-                <img src="./img/city.jpg" alt="" class="responsive-img materialboxed">
-                <!-- 7 + 4 l == 11 columns  -->
+        <div id="todo-app" class="modal">
+            <!--content just like card-content -->
+            <div class="modal-content">
+                <h4>Todo App</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae finibus mi, egestas dignissim
+                    metus. Fusce tempus elementum metus. Donec eu nibh fringilla, dignissim arcu eu, ultrices ante.
+                    Cras consectetur risus id mi condimentum aliquam.</p>
             </div>
-            <!-- pull back 5 columns and align the text to the right-->
-            <div class="col s12 l6 offset-l1 pull-l5 right-align">
-                <h2 class="grey-text text-darken-4">Cityscapes</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit
-                    elit nec, tincidunt orci.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s12 l4">
-                <img src="./img/nature.jpg" alt="" class="responsive-img materialboxed">
-            </div>
-            <!--offset in large screens by 1 column   -->
-            <div class="col s12 l6 offset-l1">
-                <h2 class="grey-text text-darken-4">Nature</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit
-                    elit nec, tincidunt orci.</p>
+            <!-- Imbedded within the modal -->
+            <div class="modal-footer">
+                <!-- modal-close has a built-in close -->
+                <a href="#!" class="modal-close btn orange">Agree</a>
             </div>
         </div>
-        <!-- parallax -->
-        <!-- creates a container -->
-        <div class="parallax-container">
-            <!-- This is the parallax itself -->
-            <div class="parallax">
-                <!-- make sure the imae is responsive -->
-                <img src="img/street.jpg" alt="" class="responsive-img">
+
+        <div class="row">
+    
+            <div class="col s12 l4 content">
+                <a href="#">
+                    <div class="content-overlay"></div>
+                    <a class="modal-trigger " href=""> <img src="./img/projects/nodeTodoApp/Todo_Front_Shot.png" alt=""
+                        class="responsive-img"></a>
+                    <div class="content-details fadeIn-top">
+                        <h3>This is a title</h3>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
@@ -247,11 +241,13 @@
     </script>
     <script>
         $(document).ready(function () {
-            /* The variables need to be initialized. */
+            /* Initializing variables */
 
             $('.sidenav').sidenav();
             /* materialbox pops up the image */
             $('.materialboxed').materialbox();
+            /* Enables modal pop-up */
+            $('.modal').modal();
             /* Parallax enables the scrolling effect */
             $('.parallax').parallax();
             /* We can click on toggle */
@@ -267,6 +263,13 @@
             $('.tooltipped').tooltip();
 
             $('.scrollspy').scrollSpy()
+
+            /* Test carousel */
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true,
+                indicators: true
+            });
+            
 
         });
     </script>

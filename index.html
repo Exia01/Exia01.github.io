@@ -43,36 +43,69 @@
             </div>
         </nav>
     </header>
+
     <!-- Title Header -->
     <section class="pro-title" id="title-header">
-        <h3 class="title-info center-align white-text flow-text ">Full Stack Web Developer</h3>
-
+        <h4 class="title-info center-align white-text">Full Stack Web Developer</h4>
     </section>
+
     <!-- Projects -->
     <section class="container section scrollspy" id="projects">
         <h3 class="title-info center-align ">Projects</h3>
-        <hr>
         <div class="row">
-            <div class="col s12 l4 project-item-caption">
-                <a class="modal-trigger " href="#todo-app"> <img src="./img/projects/nodeTodoApp/Todo_Front_Shot.png" alt=""
+            <div class="col s12 m6 l4 project-item-caption">      
+                 <h5 class="center-align">Todo App</h5>
+                <a class="modal-trigger " href="#todo-app"> <img src="./img/projects/nodeTodoApp/Todo_Front_Shot.png" alt="Todo App Screenshot"
                         class="responsive-img"></a>
             </div>
-            <div class="project-item-caption-content text-center text-white">
-                <i class="fa fa-search-plus fa-3x"></i>
+            <div class="col s12 m6 l4 project-item-caption">      
+                 <h5 class="center-align">Travel Buddy</h5>
+                <a class="modal-trigger " href="#travel-buddy"> <img src="./img/projects/nodeTodoApp/Todo_Front_Shot.png" alt="Todo App Screenshot"
+                        class="responsive-img"></a>
             </div>
+            <div class="col s12 m6 l4 project-item-caption">      
+                 <h5 class="center-align">Squishy Tomatoes</h5>
+                <a class="modal-trigger " href="#squishy-tomatoes"> <img src="./img/projects/nodeTodoApp/Todo_Front_Shot.png" alt="Todo App Screenshot"
+                        class="responsive-img"></a>
+            </div>
+          
         </div>
+
+        <!-- Modals -->
         <div id="todo-app" class="modal">
-            <!--content just like card-content -->
             <div class="modal-content">
-                <h4>Todo App</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae finibus mi, egestas dignissim
+               <a href="#!"><i class="close-button modal-close medium material-icons">close</i></a>
+               <h4 class="center-align">Node - Express</h4>
+                <p>Todoapp Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae finibus mi, egestas dignissim
                     metus. Fusce tempus elementum metus. Donec eu nibh fringilla, dignissim arcu eu, ultrices ante.
                     Cras consectetur risus id mi condimentum aliquam.</p>
             </div>
-            <!-- Imbedded within the modal -->
             <div class="modal-footer">
-                <!-- modal-close has a built-in close -->
-                <a href="#!" class="modal-close btn orange">Agree</a>
+                <a href="#!" class="footer-text modal-close btn grey darken-2 waves">View On Github</a>
+            </div>
+        </div>
+        <div id="travel-buddy" class="modal">
+            <div class="modal-content">
+               <a href="#!"><i class="close-button modal-close medium material-icons">close</i></a>
+               <h4 class="center-align">Python - Django</h4>
+                <p>Travel Buddy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae finibus mi, egestas dignissim
+                    metus. Fusce tempus elementum metus. Donec eu nibh fringilla, dignissim arcu eu, ultrices ante.
+                    Cras consectetur risus id mi condimentum aliquam.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="footer-text modal-close btn grey darken-2 waves">View On Github</a>
+            </div>
+        </div>
+        <div id="squishy-tomatoes" class="modal">
+            <div class="modal-content">
+               <a href="#!"><i class="close-button modal-close medium material-icons">close</i></a>
+                <h4 class="center-align">MEAN </h4>
+                <p>Squishy Tomatoes Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae finibus mi, egestas dignissim
+                    metus. Fusce tempus elementum metus. Donec eu nibh fringilla, dignissim arcu eu, ultrices ante.
+                    Cras consectetur risus id mi condimentum aliquam.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="footer-text modal-close btn grey darken-2 waves">View On Github</a>
             </div>
         </div>
     </section>

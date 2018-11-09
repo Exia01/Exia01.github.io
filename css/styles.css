@@ -1,98 +1,58 @@
 body {
-    font-family: 'Roboto', sans-serif, Cambria, Cochin, Georgia, serif;
+  font-family: 'Roboto', sans-serif, Cambria, Cochin, Georgia, serif;
 }
 
-
+/* Navbar */
 nav ul a:hover {
-    color: lightskyblue;
+  color: lightskyblue;
 }
 
+.sidenav li > a {
+  color: white;
+}
+
+/* Font size to prevent spilling out of .container */
+@media screen and (max-width: 670px) {
+  nav .container > a {
+    font-size: 1.9rem;
+  }
+}
+
+/* Title Header */
 .pro-title {
-    padding: 1.9rem;
-    /* padding: 50px; */
-    background-color: #424242 !important;
+  padding: 1.9rem;
+  background-color: #424242 !important;
 }
 
-.sidenav li>a {
-    color: white;
+/* Project Section */
+.modal .modal-content {
+  padding: 35px;
 }
 
-/* These "Tab" attributes can be found in the inspect attributes */
-.tabs .indicator {
-    background-color: #1a237e;
+.modal .modal-content .close-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+.modal-content a {
+  color: #616161;
 }
 
-
-@media screen and (max-width:670px) {
-    nav .container>a {
-        font-size: 1.9rem;
-    }
+.modal-content a:hover {
+  color: lightskyblue;
 }
 
-
-.content {
-    position: relative;
-    /* width: 90%; */
-    /* max-width: 400px; */
-    margin: auto;
-    overflow: hidden;
+.modal-footer a:hover {
+  color: lightskyblue;
 }
-
-.content .content-overlay {
-    background: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    height: 97%;
-    width: 94%;
-    left: 3%;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    opacity: 0;
-    -webkit-transition: all 0.4s ease-in-out 0s;
-    -moz-transition: all 0.4s ease-in-out 0s;
-    transition: all 0.4s ease-in-out 0s;
-}
-
-.content:hover .content-overlay {
-    opacity: 1;
-}
-
-.content-details {
-    position: absolute;
-    text-align: center;
-    width: 90%;
-    top: 50%;
-    left: 50%;
-    opacity: 0;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    -moz-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-}
-
-.content:hover .content-details {
-    top: 50%;
-    left: 50%;
-    opacity: 1;
-}
-
-.content-details h3 {
-    color: #fff;
-    font-weight: 500;
-
+.footer-text{
+    text-transform: none
 }
 
 
-.fadeIn-bottom {
-    top: 80%;
-}
-
-.fadeIn-top {
-    top: 20%;
-}
-
+/* .modal-content{
+    padding: 1rem;
+} */
 
 /* .portfolio {
   margin-bottom: -15px;

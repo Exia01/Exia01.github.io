@@ -28,71 +28,84 @@
                 </a>
                 <ul class="right hide-on-med-and-down">
                     <li><a class="hvr-hang" href="#">Resume</a></li>
-                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="https://www.linkedin.com/in/js-gonzalez/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/Exia01" target="_blank">Github</a></li>
                     <li><a href="#">Contact</a></li>
 
                     <!-- Mobile Menu -->
                 </ul>
                 <ul class="sidenav grey darken-2" id="mobile-menu">
                     <li><a href="#">Resume</a></li>
-                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="https://www.linkedin.com/in/js-gonzalez/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/Exia01" target="_blank">Github</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
+
     <!-- Title Header -->
     <section class="pro-title" id="title-header">
-        <h3 class="title-info center-align white-text flow-text ">Full Stack Web Developer</h3>
-
+        <h4 class="title-info center-align white-text">Full Stack Web Developer</h4>
     </section>
+
     <!-- Projects -->
     <section class="container section scrollspy" id="projects">
+        <h3 class="title-info center-align ">Projects</h3>
         <div class="row">
-            <!-- column smalls and up 12 columns and large takes 4 columns   -->
-            <div class="col s12 l4">
-                <!-- the responsive image takes the size of the columns -->
-                <img src="./img/portrait.jpg" alt="" class="responsive-img materialboxed">
-                <!-- Material boxed  -->
+            <div class="col s12 m6 l4 project-item-caption">      
+                 <h5 class="center-align">Todo App</h5>
+                <a class="modal-trigger " href="#todo-app"> <img src="./img/projects/nodeTodoApp/Todo_Front_Shot.png" alt="Todo App Screenshot"
+                        class="responsive-img"></a>
             </div>
-            <!--offset in large screens by 1 column   -->
-            <div class="col s12 l6 offset-l1">
-                <h2 class="grey-text text-darken-4">Portraits</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit
-                    elit nec, tincidunt orci.</p>
+            <div class="col s12 m6 l4 project-item-caption">      
+                 <h5 class="center-align">Travel Buddy</h5>
+                <a class="modal-trigger " href="#travel-buddy"> <img src="./img/projects/nodeTodoApp/Todo_Front_Shot.png" alt="Todo App Screenshot"
+                        class="responsive-img"></a>
+            </div>
+            <div class="col s12 m6 l4 project-item-caption">      
+                 <h5 class="center-align">Squishy Tomatoes</h5>
+                <a class="modal-trigger " href="#squishy-tomatoes"> <img src="./img/projects/nodeTodoApp/Todo_Front_Shot.png" alt="Todo App Screenshot"
+                        class="responsive-img"></a>
+            </div>
+          
+        </div>
+
+        <!-- Modals -->
+        <div id="todo-app" class="modal">
+            <div class="modal-content">
+               <a href="#!"><i class="close-button modal-close medium material-icons">close</i></a>
+               <h4 class="center-align">Node - Express</h4>
+                <p>Todoapp Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae finibus mi, egestas dignissim
+                    metus. Fusce tempus elementum metus. Donec eu nibh fringilla, dignissim arcu eu, ultrices ante.
+                    Cras consectetur risus id mi condimentum aliquam.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="footer-text modal-close btn grey darken-2 waves">View On Github</a>
             </div>
         </div>
-        <div class="row">
-            <!-- Takes the picture push image in lg screens by 7  -->
-            <div class="col s12 l4 offset-l1 push-l7">
-                <img src="./img/city.jpg" alt="" class="responsive-img materialboxed">
-                <!-- 7 + 4 l == 11 columns  -->
+        <div id="travel-buddy" class="modal">
+            <div class="modal-content">
+               <a href="#!"><i class="close-button modal-close medium material-icons">close</i></a>
+               <h4 class="center-align">Python - Django</h4>
+                <p>Travel Buddy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae finibus mi, egestas dignissim
+                    metus. Fusce tempus elementum metus. Donec eu nibh fringilla, dignissim arcu eu, ultrices ante.
+                    Cras consectetur risus id mi condimentum aliquam.</p>
             </div>
-            <!-- pull back 5 columns and align the text to the right-->
-            <div class="col s12 l6 offset-l1 pull-l5 right-align">
-                <h2 class="grey-text text-darken-4">Cityscapes</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit
-                    elit nec, tincidunt orci.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s12 l4">
-                <img src="./img/nature.jpg" alt="" class="responsive-img materialboxed">
-            </div>
-            <!--offset in large screens by 1 column   -->
-            <div class="col s12 l6 offset-l1">
-                <h2 class="grey-text text-darken-4">Nature</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit
-                    elit nec, tincidunt orci.</p>
+            <div class="modal-footer">
+                <a href="#!" class="footer-text modal-close btn grey darken-2 waves">View On Github</a>
             </div>
         </div>
-        <!-- parallax -->
-        <!-- creates a container -->
-        <div class="parallax-container">
-            <!-- This is the parallax itself -->
-            <div class="parallax">
-                <!-- make sure the imae is responsive -->
-                <img src="img/street.jpg" alt="" class="responsive-img">
+        <div id="squishy-tomatoes" class="modal">
+            <div class="modal-content">
+               <a href="#!"><i class="close-button modal-close medium material-icons">close</i></a>
+                <h4 class="center-align">MEAN </h4>
+                <p>Squishy Tomatoes Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae finibus mi, egestas dignissim
+                    metus. Fusce tempus elementum metus. Donec eu nibh fringilla, dignissim arcu eu, ultrices ante.
+                    Cras consectetur risus id mi condimentum aliquam.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="footer-text modal-close btn grey darken-2 waves">View On Github</a>
             </div>
         </div>
     </section>
@@ -247,11 +260,13 @@
     </script>
     <script>
         $(document).ready(function () {
-            /* The variables need to be initialized. */
+            /* Initializing variables */
 
             $('.sidenav').sidenav();
             /* materialbox pops up the image */
             $('.materialboxed').materialbox();
+            /* Enables modal pop-up */
+            $('.modal').modal();
             /* Parallax enables the scrolling effect */
             $('.parallax').parallax();
             /* We can click on toggle */
@@ -267,6 +282,13 @@
             $('.tooltipped').tooltip();
 
             $('.scrollspy').scrollSpy()
+
+            /* Test carousel */
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true,
+                indicators: true
+            });
+            
 
         });
     </script>

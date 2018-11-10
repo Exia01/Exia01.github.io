@@ -33,6 +33,7 @@ nav ul a:hover {
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
+  font-size: 2.5rem
 }
 .modal-content a {
   color: #616161;
@@ -49,6 +50,16 @@ nav ul a:hover {
     text-transform: none
 }
 
+/* SMARTPHONES PORTRAIT and
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (max-width: 480px) {
+  .modal .modal-content .close-button {
+    font-size: xx-large;
+  }
+}
+.modal::-webkit-scrollbar {
+  display: none;
+ }
 
 /* .modal-content{
     padding: 1rem;

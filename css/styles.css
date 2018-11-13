@@ -14,6 +14,7 @@ body {
     font-size: 1.9rem;
   }
 }
+
 /* Navbar */
 nav ul a:hover {
   color: lightskyblue;
@@ -60,7 +61,7 @@ nav ul a:hover {
 .modal::-webkit-scrollbar {
   display: none;
 }
-.modal .modal-content span{
+.modal .modal-content span {
   font-style: italic;
 }
 

@@ -3,73 +3,93 @@ body {
 }
 
 /* Media Queries */
-@media only screen and (max-width: 480px) {
+/* @media screen and (max-width: 400) {
+  nav  {
+    font-size: 1.7rem;
+  }
+} */
+
+  @media only screen and (max-width: 480px) {
+    .modal .modal-content .close-button {
+      font-size: xx-large;
+    }
+  }
+
+  @media screen and (max-width: 385px) {
+    nav .container>a, .title-info {
+      font-size:x-large;
+    }
+  }
+  /* Navbar */
+  nav ul a:hover {
+    color: lightskyblue;
+  }
+
+  .sidenav li>a {
+    color: white;
+  }
+
+  /* Font size to prevent spilling out of .container */
+  /* Title Header */
+  .pro-title {
+    padding: 1.9rem;
+    background-color: #424242 !important;
+  }
+
+  /* Project Section */
+
+  .modal .modal-content {
+    padding: 35px;
+  }
+
   .modal .modal-content .close-button {
-    font-size: xx-large;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 2.5rem;
   }
-}
 
-@media screen and (max-width: 670px) {
-  nav .container > a {
-    font-size: 1.9rem;
+  .modal-content a {
+    color: #616161;
   }
-}
 
-/* Navbar */
-nav ul a:hover {
-  color: lightskyblue;
-}
+  .modal-content a:hover {
+    color: lightskyblue;
+  }
 
-.sidenav li > a {
-  color: white;
-}
+  .modal-footer a:hover {
+    color: lightskyblue;
+  }
 
-/* Font size to prevent spilling out of .container */
-/* Title Header */
-.pro-title {
-  padding: 1.9rem;
-  background-color: #424242 !important;
-}
+  .footer-text {
+    text-transform: none;
+  }
 
-/* Project Section */
+  .modal::-webkit-scrollbar {
+    display: none;
+  }
 
-.modal .modal-content {
-  padding: 35px;
-}
+  .modal .modal-content span {
+    font-style: italic;
+  }
 
-.modal .modal-content .close-button {
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  font-size: 2.5rem;
-}
-.modal-content a {
-  color: #616161;
-}
+  /* Skills Section */
+  .aws, .django {
+    border-radius: 8%;
+  }
 
-.modal-content a:hover {
-  color: lightskyblue;
-}
+  .skills-img img.responsive-img,
+  video.responsive-video {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 3vh;
+  }
 
-.modal-footer a:hover {
-  color: lightskyblue;
-}
-.footer-text {
-  text-transform: none;
-}
-
-.modal::-webkit-scrollbar {
-  display: none;
-}
-.modal .modal-content span {
-  font-style: italic;
-}
-
-/* .modal-content{
+  /* .modal-content{
     padding: 1rem;
 } */
 
-/* .portfolio {
+  /* .portfolio {
   margin-bottom: -15px;
 }
 
@@ -80,11 +100,11 @@ nav ul a:hover {
   margin-bottom: 15px;
 } */
 
-/* .tabs .tab a:focus,
+  /* .tabs .tab a:focus,
 .tabs .tab a:focus.active {
     background: transparent;
 } */
-/* Icons being on the same line as text
+  /* Icons being on the same line as text
 .fa,
 .fab,
 .fal,
@@ -92,7 +112,7 @@ nav ul a:hover {
 .fas {
     line-height: inherit;
 } */
-/* nav .brand-logo {
+  /* nav .brand-logo {
                         font-size: 1.7rem;
                     } */
-/* vw is a relation unit, the smaller the screen the smaller the top  */
+  /* vw is a relation unit, the smaller the screen the smaller the top  */

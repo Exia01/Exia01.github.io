@@ -1,95 +1,122 @@
 body {
   font-family: 'Roboto', sans-serif, Cambria, Cochin, Georgia, serif;
 }
+.section {
+  padding-bottom: 0;
+}
 
-/* Media Queries */
-/* @media screen and (max-width: 400) {
-  nav  {
-    font-size: 1.7rem;
+@media only screen and (max-width: 480px) {
+  .modal .modal-content .close-button {
+    font-size: xx-large;
   }
+}
+
+@media screen and (max-width: 385px) {
+  nav .container > a {
+    font-size: x-large;
+  }
+}
+/* Navbar */
+nav ul a:hover {
+  color: lightskyblue;
+}
+
+.sidenav li > a {
+  color: white;
+}
+
+/* Font size to prevent spilling out of .container */
+/* Title Header */
+.pro-title {
+  padding: 1.9rem;
+  background-color: #424242 !important;
+}
+
+/* Project Section */
+
+.modal .modal-content {
+  padding: 35px;
+}
+
+.modal .modal-content .close-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.modal-content a {
+  color: #616161;
+}
+
+.modal-content a:hover {
+  color: lightskyblue;
+}
+
+.modal-footer a:hover {
+  color: lightskyblue;
+}
+
+.footer-text {
+  text-transform: none;
+}
+
+.modal::-webkit-scrollbar {
+  display: none;
+}
+
+.modal .modal-content span {
+  font-style: italic;
+}
+
+/* Skills Section */
+.aws,
+.django {
+  border-radius: 8%;
+}
+
+.skills-img img.responsive-img,
+video.responsive-video {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 3vh;
+}
+.collapsible-header {
+  justify-content: center;
+}
+
+.base {
+  display: flex;
+}
+
+.base .other-skills{
+  flex:1;
+}
+.base-container .other-section{
+  flex: 1
+}
+.base-container .other-section-icon{
+  flex: 3
+}
+/* ul.test-row {
+  flex: 60%;
+}
+.row-right {
+  flex: 40%;
 } */
 
-  @media only screen and (max-width: 480px) {
-    .modal .modal-content .close-button {
-      font-size: xx-large;
-    }
-  }
 
-  @media screen and (max-width: 385px) {
-    nav .container>a, .title-info {
-      font-size:x-large;
-    }
-  }
-  /* Navbar */
-  nav ul a:hover {
-    color: lightskyblue;
-  }
+/* .row-column li {
+    float: left;
+    width: 58%;
+    display: float;
+} */
 
-  .sidenav li>a {
-    color: white;
-  }
-
-  /* Font size to prevent spilling out of .container */
-  /* Title Header */
-  .pro-title {
-    padding: 1.9rem;
-    background-color: #424242 !important;
-  }
-
-  /* Project Section */
-
-  .modal .modal-content {
-    padding: 35px;
-  }
-
-  .modal .modal-content .close-button {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    font-size: 2.5rem;
-  }
-
-  .modal-content a {
-    color: #616161;
-  }
-
-  .modal-content a:hover {
-    color: lightskyblue;
-  }
-
-  .modal-footer a:hover {
-    color: lightskyblue;
-  }
-
-  .footer-text {
-    text-transform: none;
-  }
-
-  .modal::-webkit-scrollbar {
-    display: none;
-  }
-
-  .modal .modal-content span {
-    font-style: italic;
-  }
-
-  /* Skills Section */
-  .aws, .django {
-    border-radius: 8%;
-  }
-
-  .skills-img img.responsive-img,
-  video.responsive-video {
-    max-width: 80%;
-    height: auto;
-    margin-bottom: 3vh;
-  }
-
-  /* .modal-content{
+/* .modal-content{
     padding: 1rem;
 } */
 
-  /* .portfolio {
+/* .portfolio {
   margin-bottom: -15px;
 }
 
@@ -100,11 +127,11 @@ body {
   margin-bottom: 15px;
 } */
 
-  /* .tabs .tab a:focus,
+/* .tabs .tab a:focus,
 .tabs .tab a:focus.active {
     background: transparent;
 } */
-  /* Icons being on the same line as text
+/* Icons being on the same line as text
 .fa,
 .fab,
 .fal,
@@ -112,7 +139,7 @@ body {
 .fas {
     line-height: inherit;
 } */
-  /* nav .brand-logo {
+/* nav .brand-logo {
                         font-size: 1.7rem;
                     } */
-  /* vw is a relation unit, the smaller the screen the smaller the top  */
+/* vw is a relation unit, the smaller the screen the smaller the top  */

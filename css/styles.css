@@ -5,13 +5,6 @@ body {
   padding-bottom: 0;
 }
 
-/* Media Queries */
-/* @media screen and (max-width: 400) {
-  nav  {
-    font-size: 1.7rem;
-  }
-} */
-
 @media only screen and (max-width: 480px) {
   .modal .modal-content .close-button {
     font-size: xx-large;
@@ -91,15 +84,27 @@ video.responsive-video {
 .collapsible-header {
   justify-content: center;
 }
+
 .base {
   display: flex;
 }
-ul.test-row {
+
+.base .other-skills{
+  flex:1;
+}
+.base-container .other-section{
+  flex: 1
+}
+.base-container .other-section-icon{
+  flex: 3
+}
+/* ul.test-row {
   flex: 60%;
 }
 .row-right {
   flex: 40%;
-}
+} */
+
 
 /* .row-column li {
     float: left;

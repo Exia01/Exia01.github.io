@@ -86,14 +86,14 @@ video.responsive-video {
   position: relative;
   justify-content: center;
 }
-.collapsible-header .inter-change .next-badge{
-  font: x-large;
-}
 .next-badge {
   /* font-size: x-large; */
   position: absolute;
   right: 0%;
   top: 45%;
+}
+.collapsible-header .next-badge {
+  font: x-large;
 }
 
 .base {

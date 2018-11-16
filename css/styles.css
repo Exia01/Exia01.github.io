@@ -81,30 +81,38 @@ video.responsive-video {
   height: auto;
   margin-bottom: 3vh;
 }
+
 .collapsible-header {
+  position: relative;
   justify-content: center;
+}
+.collapsible-header .inter-change .next-badge{
+  font: x-large;
+}
+.next-badge {
+  /* font-size: x-large; */
+  position: absolute;
+  right: 0%;
+  top: 45%;
 }
 
 .base {
   display: flex;
 }
 
-.base .other-skills{
-  flex:1;
+.base .other-skills {
+  flex: 1;
 }
-.base-container .other-section{
-  flex: 1
+.base-container {
+  flex: 1;
 }
-.base-container .other-section-icon{
-  flex: 3
-}
+
 /* ul.test-row {
   flex: 60%;
 }
 .row-right {
   flex: 40%;
 } */
-
 
 /* .row-column li {
     float: left;

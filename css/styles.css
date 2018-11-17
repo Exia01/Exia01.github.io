@@ -1,9 +1,9 @@
 body {
   font-family: 'Roboto', sans-serif, Cambria, Cochin, Georgia, serif;
 }
-.section {
+/* .section {
   padding-bottom: 0;
-}
+} */
 
 @media only screen and (max-width: 480px) {
   .modal .modal-content .close-button {
@@ -87,13 +87,15 @@ video.responsive-video {
   justify-content: center;
 }
 .next-badge {
-  /* font-size: x-large; */
   position: absolute;
   right: 0%;
-  top: 45%;
+  top: 41%;
+}
+.next-badge:hover{
+  color: lightskyblue;
 }
 .collapsible-header .next-badge {
-  font: x-large;
+  font-size: xx-large;
 }
 
 .base {

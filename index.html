@@ -220,7 +220,7 @@
         <ul class="collapsible">
             <li>
                 <div class="collapsible-header">
-                        <h4>Others <i class="next-badge material-icons">add</i></h4>
+                        <h4 id="parent-text">Others <i id="child-text" class="next-badge material-icons" >add</i></h4>
                 </div>
                 <div class="collapsible-body">
                     <div class="base">
@@ -254,71 +254,6 @@
         </ul>
         </section>
 
-    <!-- contact form -->
-    <section class="section container scrollspy" id="contact">
-        <!-- Row to apply columns -->
-        <div class="row">
-            <div class="col s12 l5">
-                <h2 class="indigo-text text-darken-4">Get in Touch</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue,
-                    suscipit elit nec, tincidunt orci.</p>
-                <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum
-                    gravida urna, vitae scelerisque erat ornare nec.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue,
-                    suscipit elit nec, tincidunt orci.</p>
-                <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum
-                    gravida urna, vitae scelerisque erat ornare nec.</p>
-            </div>
-            <!-- 5 and 5 plus 2 offset -->
-            <div class="col s12 l5 offset-l2">
-                <form>
-                    <!-- always a good idea to separate the input fields on their own divs -->
-                    <div class="input-field">
-                        <!-- prefix places it to the left -->
-                        <i class="material-icons prefix">email</i>
-                        <input type="email" id="email">
-                        <!-- Labels need to placed at the bottom of the input -->
-                        <label for="email">Your Email</label>
-                    </div>
-                    <div class="input-field">
-                        <i class="material-icons prefix">message</i>
-                        <!-- text area class -->
-                        <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
-                        <!-- Labels need to placed at the bottom of the input -->
-                        <label for="message">Your Message</label>
-                    </div>
-
-                    <!-- Divs of ints own div -->
-                    <div class="input-field">
-                        <i class="material-icons prefix">date_range</i>
-                        <!-- always type text / materialize takes care of it -->
-                        <input type="text" id="date" class="datepicker">
-                        <label for="date">Choose a start date.</label>
-                    </div>
-                    <div class="input-field">
-                        <p>Services required:</p>
-                        <p>
-                            <label>
-                                <input type="checkbox">
-                                <span>Photography</span>
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <input type="checkbox">
-                                <span>Photo Editing</span>
-                            </label>
-                        </p>
-                    </div>
-                    <div class="input-field center">
-                        <button class="btn">Submit</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-
-
     <!-- Footer -->
 
     <footer class="page-footer grey darken-3">
@@ -351,49 +286,39 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
-</script>
-    <script>
+</script><script>
+    $(document).ready(function () {
+        /* Initializing variables */
+
+        $('.sidenav').sidenav();
+        /* materialbox pops up the image */
+        $('.materialboxed').materialbox();
+        /* Enables modal pop-up */
+        $('.modal').modal();
+
+        /* Initializes the hover */
+        $('.tooltipped').tooltip();
+
+        $('.scrollspy').scrollSpy()
+
+
+        // collapsible skills menu
         $(document).ready(function () {
-            /* Initializing variables */
-
-            $('.sidenav').sidenav();
-            /* materialbox pops up the image */
-            $('.materialboxed').materialbox();
-            /* Enables modal pop-up */
-            $('.modal').modal();
-            /* Parallax enables the scrolling effect */
-            $('.parallax').parallax();
-            /* We can click on toggle */
-            $('.tabs').tabs();
-            /* Targets the date */
-            $('.datepicker').datepicker({
-                /* options passed to the function */
-                disableWeekends: true,
-                yearRange: 1
-            });
-
-            /* Initializes the hover */
-            $('.tooltipped').tooltip();
-
-            $('.scrollspy').scrollSpy()
-
-            /* Test carousel */
-            $('.carousel.carousel-slider').carousel({
-                fullWidth: true,
-                indicators: true
-            });
-
-            // collapsible skills menu
-            $(document).ready(function () {
-                $('.collapsible').collapsible();
-            });
-
-            $('#plus').click(function () {
-                $('#display_advance').toggle('1000');
-                $("i", this).toggleClass("icon-circle-arrow-up icon-circle-arrow-down");
-            });
-
+            $('.collapsible').collapsible();
         });
+
+        // change text using ternary operator 
+        /* See Reference here:https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator */
+        $("#parent-text").click(function () {
+            $("#child-text").fadeOut(function () {
+                $("#child-text").text(($("#child-text").text() == 'add') ? 'clear' : 'add').fadeIn();
+            })
+        })
+
+
+
+
+    });
     </script>
 </body>
 

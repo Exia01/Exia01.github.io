@@ -87,13 +87,15 @@ video.responsive-video {
   justify-content: center;
 }
 .next-badge {
-  /* font-size: x-large; */
   position: absolute;
   right: 0%;
-  top: 45%;
+  top: 41%;
+}
+.next-badge:hover{
+  color: lightskyblue;
 }
 .collapsible-header .next-badge {
-  font: x-large;
+  font-size: xx-large;
 }
 
 .base {

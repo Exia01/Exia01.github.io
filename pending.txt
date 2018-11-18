@@ -1,2 +1,3 @@
-- Sideav trigger button
-- projects, skills padding
+-Scroll to top hover button
+-Aesthetics \ minor changes
+- Final Revision

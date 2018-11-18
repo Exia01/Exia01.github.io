@@ -23,23 +23,25 @@
         <nav class="nav-wrapper grey darken-2 " id="mainNav">
             <div class="container">
                 <a href="https://exia01.github.io" class="port-name brand-logo flow-text">Jose Gonzalez</a>
-                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
-                    <i class="material-icons">menu</i>
-                </a>
+                <div id="side-menu">
+                    <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                        <i class="material-icons">menu</i>
+                    </a>
+                </div>
                 <ul class="right hide-on-med-and-down">
-                    <li><a class="modal-trigger hvr-hang " href="#resume-show2">Resume</a></li>
+                    <li><a class="modal-trigger" href="#resume-show2">Resume</a></li>
                     <li><a href="https://www.linkedin.com/in/js-gonzalez/" target="_blank">LinkedIn</a></li>
                     <li><a href="https://github.com/Exia01" target="_blank">Github</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="mailto:gonzalezj@protonmail.com??Subject=Let%27s%20Connect!" target="_blank">Contact</a></li>
     
                 </ul>
                 <!-- Mobile Menu -->
-                <ul class="sidenav grey darken-2" id="mobile-menu">
-                    <li><a href="Resume_Jose_Gonzalez.pdf" target="_blank">Resume</a></li>
+                <ul class=" sidenav sidenav-close grey darken-2  " id="mobile-menu">
+                    <li><a class="modal-trigger" href="#resume-show2">Resume</a></li>
                     <li><a href="https://www.linkedin.com/in/js-gonzalez/" target="_blank">LinkedIn</a></li>
                     <li><a href="https://github.com/Exia01" target="_blank">Github</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Skills</a></li>
+                    <li><a href="mailto:gonzalezj@protonmail.com??Subject=Let%27s%20Connect!" target="_blank">Contact</a></li>
+                    <li><a  class="js-scroll-trigger" href="#skills">Skills</a></li>
     
                 </ul>
             </div>
@@ -307,7 +309,7 @@
             </div>
         </div>
         <!-- Copyright is a materialize class -->
-        <div class="footer-copyright grey darken-4">
+        <div class="footer-copyright grey darken-2">
             <!-- container to  center-align -->
             <div class="container center-align">&copy; Jose Gonzalez</div>
         </div>
@@ -315,40 +317,10 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
-</script><script>
-    $(document).ready(function () {
-        /* Initializing variables */
-
-        $('.sidenav').sidenav();
-        /* materialbox pops up the image */
-        $('.materialboxed').materialbox();
-        /* Enables modal pop-up */
-        $('.modal').modal();
-
-        /* Initializes the hover */
-        $('.tooltipped').tooltip();
-
-        $('.scrollspy').scrollSpy()
-
-
-        // collapsible skills menu
-        $(document).ready(function () {
-            $('.collapsible').collapsible();
-        });
-
-        // change text using ternary operator 
-        /* See Reference here:https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator */
-        $("#parent-text").click(function () {
-            $("#child-text").fadeOut(function () {
-                $("#child-text").text(($("#child-text").text() == 'add') ? 'clear' : 'add').fadeIn();
-            })
-        })
-
-
-
-
-    });
     </script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

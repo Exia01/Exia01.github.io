@@ -36,7 +36,7 @@ nav ul a:hover {
 /* Project Section */
 
 .modal .modal-content {
-  padding: 35px;
+  padding: none;
 }
 
 .modal .modal-content .close-button {

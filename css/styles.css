@@ -110,8 +110,11 @@ video.responsive-video {
   flex: 1;
 }
 
-/* Footer section */
 
+/* Footer section */
+.resume-show .modal-footer a{
+  color: black
+}
 .footer-nav li a {
   color: #fff;
 }

@@ -14,6 +14,7 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
         <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
         <title>Jose Gonzalez</title>
     </head>
@@ -40,7 +41,7 @@
                     <li><a class="modal-trigger" href="#resume-show2">Resume</a></li>
                     <li><a href="https://www.linkedin.com/in/js-gonzalez/" target="_blank">LinkedIn</a></li>
                     <li><a href="https://github.com/Exia01" target="_blank">Github</a></li>
-                    <li><a href="mailto:gonzalezj@protonmail.com??Subject=Let%27s%20Connect!" target="_blank">Contact</a></li>
+                    <li><a href="mailto:gonzalezj@protonmail.com?subject=Let%27s%20Connect	%21" target="_blank">Contact</a></li>
                     <li><a  class="js-scroll-trigger" href="#skills">Skills</a></li>
     
                 </ul>
@@ -72,7 +73,6 @@
                 <a class="modal-trigger " href="#todo-app"> <img src="./img/projects/nodeTodoApp/Todo_Landing.png" alt="Todo App Screenshot"
                         class="responsive-img"></a>
             </div>
-        
         </div>
 
         <!-- Modals -->
@@ -211,7 +211,7 @@
             </div>
             <div class="col s2 ">
                 <img src="./img/skills/jquery.png" alt="jQuery" class="responsive-img tooltipped" data-position="top"
-                    data-tooltip="jQuery">
+                    data-tooltip="jQuery" >
             </div>
             <div class="col s2">
                 <img src="./img/skills/Redux.png" alt="Redux" class="responsive-img tooltipped" data-position="top"
@@ -270,9 +270,10 @@
         </div>
     
     </div>
-    
+    <!-- Resume Modal Test -->
     <div id="resume-show2" class="modal">
         <div class="modal-content">
+                <!-- <a href="Resume_Jose_Gonzalez.pdf" target="_blank" class="btn-small btn-floating waves green darken-2"><i class="material-icons">cloud_download</i></a> -->
             <a href="#!"><i class="close-button modal-close medium material-icons">close</i></a>
             <h4 href="./Resume_Jose_Gonzalez.pdf" class="center-align">Tech Resume</h4>
             <img src="./img/resume/Resume_pg1.png" alt="Resume_pg1" class="responsive-img">
@@ -282,10 +283,12 @@
         </div>
         <div class="modal-footer">
             <a href="Resume_Jose_Gonzalez.pdf" target="_blank" class="footer-text modal-close btn grey darken-2 waves">Download</a>
+           <!--  <a href="Resume_Jose_Gonzalez.pdf" target="_blank" class="footer-text btn-floating pulse green darken-2"><i class="material-icons">cloud_download</i></a> -->
         </div>
     </div>
     
-
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
 
     <!-- Footer -->
     <footer class="page-footer grey darken-3">
@@ -294,8 +297,8 @@
             <div class="row">
                 <div class="col l6 s12">
                     <h5>About Me</h5>
-                    <p>Team-Oriented Full stack developer with hands-on extensive experience in multiple stacks including Python, MEAN, Java and their respective frameworks.</p>
-                    <p>I love listening to philosophy podcasts and catching up with current events on my spare time.</p>
+                    <p>Team-oriented Full Stack Developer with extensive hands-on  experience in multiple stacks including Python, MEAN, Java and their respective frameworks.</p>
+                    <p>I love listening to philosophy podcasts and catching up with current events in my spare time.</p>
                 </div>
                 <div class="col l4 offset-l2 s12">
                     <h5 class="white-text">Connect</h5>
@@ -303,23 +306,24 @@
                         <li><a class="modal-trigger hvr-hang " href="#resume-show">Resume</a></li>
                         <li><a href="https://www.linkedin.com/in/js-gonzalez/" target="_blank">LinkedIn</a></li>
                         <li><a href="https://github.com/Exia01" target="_blank">Github</a></li>
-                        <li><a href="mailto:gonzalezj@protonmail.com??Subject=Let%27s%20Connect!" target="_blank">Contact</a></li>
+                        <li><a href="mailto:gonzalezj@protonmail.com?subject=Let%27s%20Connect%21" target="_blank">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <!-- Copyright is a materialize class -->
+
         <div class="footer-copyright grey darken-2">
-            <!-- container to  center-align -->
             <div class="container center-align">&copy; Jose Gonzalez</div>
         </div>
     </footer>
     <!-- Compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+    crossorigin="anonymous"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
     </script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-        crossorigin="anonymous"></script>
+    
     <script src="./js/main.js"></script>
 </body>
 

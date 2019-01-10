@@ -44,9 +44,12 @@ body {
 .collapsible-header h4 {
   font-size: 2.00rem;
 }
+/* additional skills section */
 .base {
   padding-left: 10px;
-  display: flex;
+}
+.collapsible-body {
+  padding: 1rem;
 }
   
 }

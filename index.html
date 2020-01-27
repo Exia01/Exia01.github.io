@@ -6,10 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <!-- Font Awesome CDN -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-            crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+            integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <!-- Roboto Font -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+
         <!-- Import Google Icon Font -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Compiled and minified CSS -->
@@ -18,313 +20,272 @@
         <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
         <title>Jose Gonzalez</title>
     </head>
-<body>
-    <!-- Navbar -->
-    <header>
-        <nav class="nav-wrapper grey darken-2 " id="mainNav">
-            <div class="container">
-                <a href="." class="port-name brand-logo flow-text">Jose Gonzalez</a>
-                <div id="side-menu">
-                    <a href="#" class="sidenav-trigger" data-target="mobile-menu">
-                        <i class="material-icons">menu</i>
-                    </a>
+
+    <body>
+        <!-- Navbar -->
+        <header>
+            <nav class="nav-wrapper grey darken-2 " id="mainNav">
+                <div class="container">
+                    <a href="." class="port-name brand-logo flow-text">Jose Gonzalez</a>
+                    <div id="side-menu">
+                        <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                            <i class="material-icons">menu</i>
+                        </a>
+                    </div>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a class="modal-trigger" href="#resume-show">Resume</a></li>
+                        <li><a href="https://www.linkedin.com/in/js-gonzalez/" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/Exia01" target="_blank">Github</a></li>
+                        <li><a href="mailto:gonzalezj@protonmail.com??Subject=Let%27s%20Connect!"
+                                target="_blank">Contact</a></li>
+
+                    </ul>
+                    <!-- Mobile Menu -->
+                    <ul class=" sidenav sidenav-close grey darken-2  " id="mobile-menu">
+                        <li><a href="_Resume_Jose_Gonzalez.pdf" target="_blank">Resume</a></li>
+                        <li><a href="https://www.linkedin.com/in/js-gonzalez/" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/Exia01" target="_blank">Github</a></li>
+                        <li><a href="mailto:gonzalezj@protonmail.com?subject=Let%27s%20Connect	%21"
+                                target="_blank">Contact</a></li>
+                        <li><a class="js-scroll-trigger" href="#skills">Skills</a></li>
+
+                    </ul>
                 </div>
-                <ul class="right hide-on-med-and-down">
-                    <li><a class="modal-trigger" href="#resume-show">Resume</a></li>
-                    <li><a href="https://www.linkedin.com/in/js-gonzalez/" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://github.com/Exia01" target="_blank">Github</a></li>
-                    <li><a href="mailto:gonzalezj@protonmail.com??Subject=Let%27s%20Connect!" target="_blank">Contact</a></li>
-    
-                </ul>
-                <!-- Mobile Menu -->
-                <ul class=" sidenav sidenav-close grey darken-2  " id="mobile-menu">
-                    <li><a href="_Resume_Jose_Gonzalez.pdf" target="_blank">Resume</a></li>
-                    <li><a href="https://www.linkedin.com/in/js-gonzalez/" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://github.com/Exia01" target="_blank">Github</a></li>
-                    <li><a href="mailto:gonzalezj@protonmail.com?subject=Let%27s%20Connect	%21" target="_blank">Contact</a></li>
-                    <li><a  class="js-scroll-trigger" href="#skills">Skills</a></li>
-    
-                </ul>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
 
-    <!-- Title Header -->
-    <section class="pro-title" id="title-header">
-        <h4 class="title-info center-align white-text">Full Stack Developer</h4>
-    </section>
-
-    <!-- Projects -->
-    <section class="container section scrollspy" id="projects">
-        <h3 class="title-info center-align ">Projects</h3>
-        <div class="row">
-            <div class="col s12 m6 l4 project-item-caption">
-                <h5 class="center-align">Travel Buddy</h5>
-                <a class="modal-trigger " href="#travel-buddy"> <img src="./img/projects/TravelBuddy/Travel_Landing.png" alt="Travel Buddy Screenshot"
-                        class="responsive-img"></a>
-            </div>
-            <div class="col s12 m6 l4 project-item-caption">
-                <h5 class="center-align">Squishy Tomatoes</h5>
-                <a class="modal-trigger " href="#squishy-tomatoes"> <img src="./img/projects/SquishyTomatoes/Squishy_landing.png"
-                        alt="Todo App Screenshot" class="responsive-img"></a>
-            </div>
-            <div class="col s12 m6 l4 project-item-caption">
-                <h5 class="center-align">Todo App</h5>
-                <a class="modal-trigger " href="#todo-app"> <img src="./img/projects/nodeTodoApp/Todo_Landing.png" alt="Todo App Screenshot"
-                        class="responsive-img"></a>
-            </div>
-        </div>
-
-        <!-- Modals -->
-        <div id="travel-buddy" class="modal">
-            <div class="modal-content">
-                <a href="#!"><i class="close-button modal-close medium material-icons">close</i></a>
-                <h4 class="center-align">Python - Django</h4>
-                <img src="./img/projects/TravelBuddy/Travel_Landing.png" alt="Travel Buddy App Screenshot" class="responsive-img">
-                <img src="./img/projects//TravelBuddy/Travel_All.png" alt="Squishy Tomatoes App Screenshot" class="responsive-img">
-                <p class="center-align">Collaboration web app that allows signed in users to plan and add, add/or remove their own scheduled
-                    trips and join other trips planned by other users as well</p>
-                <p class="center-align">
-                    Tech: Python, Django, Bootstrap 4, SQLite, Responsive
-                </p>
-        
-                <p><span>Last updated: 07-2018</span></p>
-            </div>
-            <div class="modal-footer">
-                <a href="https://github.com/Exia01/Travel-Buddy" target="_blank" class="footer-text modal-close btn grey darken-2 waves">View On Github</a>
-            </div>
-        </div>
-        
-        <div id="squishy-tomatoes" class="modal">
-            <div class="modal-content">
-                <a href="#!"><i class="close-button modal-close medium material-icons">close</i></a>
-                <h4 class="center-align">MEAN</h4>
-                <img src="./img/projects/SquishyTomatoes/Squishy_landing.png" alt="Squishy Tomatoes App Screenshot" class="responsive-img">
-                <img src="./img/projects/SquishyTomatoes/IMG2.png" alt="Squishy Tomatoes App Screenshot" class="responsive-img">
-                <p class="center-align">Web app that allows users to create, read, update, and delete movies and
-                    reviews
-                </p>
-                <p class="center-align">
-                    Tech: Node.js, MongoDB, Bootstrap 4, Angular 6, RESTful, Responsive
-                </p>
-                <p><span>Last updated: 08-2018 </span></p>
-            </div>
-            <div class="modal-footer">
-                <a href="https://github.com/Exia01/SquishyTomatoes" target="_blank" class="footer-text modal-close btn grey darken-2 waves">View
-                    On Github</a>
-            </div>
-        </div>
-        
-        <div id="todo-app" class="modal">
-            <div class="modal-content">
-                <a href="#!"><i class="close-button modal-close medium material-icons">close</i></a>
-                <h4 class="center-align">Node</h4>
-                <img src="./img/projects/nodeTodoApp/Todo_Landing.png" alt="Todo App Screenshot" class="responsive-img">
-                <img src="./img/projects/nodeTodoApp/Todo_Img2.png" alt="Todo App Screenshot" class="responsive-img">
-                <p class="center-align">Small scope Node/Express app | Allows user to create a "Todo" list</p>
-                <p class="center-align">
-                    Tech: Node.js, MongoDB - Mlab, Express, Semi-RESTful
-                </p>
-                <p><span>Last updated: 09-2018 </span></p>
-            </div>
-            <div class="modal-footer">
-                <a href="https://github.com/Exia01/Node-Todo-App" target="_blank" class="footer-text modal-close btn grey darken-2 waves">View
-                    On Github</a>
-            </div>
-        </div>
+        <!-- Title Header -->
+        <section class="pro-title" id="title-header">
+            <h4 class="title-info center-align white-text">Full Stack Developer </h4>
         </section>
 
-    <!-- Skills -->
-    <section class="section container skills-img scrollspy" id="skills">
-        <!-- Row 1 -->
-        <h3 class="title-info center-align ">Skills</h3>
-        <div class="row ">
-            <div class="col s2 m2">
-                <img src="./img/skills/python.png" alt="Python" class="responsive-img tooltipped" data-position="top"
-                    data-tooltip="Python">
-            </div>
-            <div class="col s2">
-                <img src="./img/skills/java.png" alt="Python" class="responsive-img tooltipped" data-position="top"
-                    data-tooltip="Java">
-            </div>
-            <div class="col s2">
-                <img src="./img/skills/html5.png" alt="HTML JavaScript CSS" class="responsive-img tooltipped" data-position="top"
-                    data-tooltip="HTML JavaScript CSS">
-            </div>
-            <div class="col s2">
-                <img src="./img/skills/react2.png" alt="React" class="django responsive-img tooltipped" data-position="top"
-                    data-tooltip="React">
-            </div>
-            <div class="col s2 ">
-                <img src="./img/skills/django2.png" alt="Django Framework" class="django responsive-img tooltipped"
-                    data-position="top" data-tooltip="Django">
-            </div>
-            <div class="col s2">
-                <img src="./img/skills/nodejs.png" alt="Node.js" class="responsive-img tooltipped" data-position="top"
-                    data-tooltip="Node.js">
-            </div>
-        </div>
-            <!-- Row 2 -->
-        <div class="row ">
-            <div class="col s2 m2">
-                <img src="./img/skills/spring.png" alt="Spring MVC" class="responsive-img tooltipped" data-position="top"
-                    data-tooltip="Spring">
-            </div>
-            <div class="col s2">
-                <img src="./img/skills/Angular2.svg.png" alt="Angular 6" class="responsive-img tooltipped" data-position="top"
-                    data-tooltip="Angular">
-            </div>
-            <div class="col s2">
-                <img src="./img/skills/GitHub-Mark2.png" alt="Github" class="responsive-img tooltipped" data-position="top"
-                    data-tooltip="Github">
-            </div>
-            <div class="col s2">
-                <img src="./img/skills/aws2.jpg" alt="Amazon Web Services" class="aws responsive-img tooltipped" data-position="top"
-                    data-tooltip="Amazon Web Services">
-            </div>
-            <div class="col s2 ">
-                <img src="./img/skills/mysql.png" alt="MySQL" class="responsive-img tooltipped" data-position="top"
-                    data-tooltip="MySQL">
-            </div>
-            <div class="col s2">
-                <img src="./img/skills/bootstrap.png" alt="Bootstrap" class="responsive-img tooltipped" data-position="top"
-                    data-tooltip="Bootstrap">
-            </div>
-        </div>
-            <!-- Row 3 -->
-        <div class="row ">
-            <div class="col s2 m2">
-                <img src="./img/skills/MaterializeCSS.png" alt="Materialize CSS" class="responsive-img tooltipped"
-                    data-position="top" data-tooltip="Materialize">
-            </div>
-            <div class="col s2">
-                <img src="./img/skills/visualStudio.png" alt="visual studio" class="responsive-img tooltipped" data-position="top"
-                    data-tooltip="Visual Studio ">
-            </div>
-            <div class="col s2">
-                <img src="./img/skills/eclipse.png" alt="eclipse" class="responsive-img tooltipped" data-position="top"
-                    data-tooltip="Eclipse">
-            </div>
-            <div class="col s2">
-                <img src="./img/skills/linux.png" alt="Linux" class="aws responsive-img tooltipped" data-position="top"
-                    data-tooltip="Linux">
-            </div>
-            <div class="col s2 ">
-                <img src="./img/skills/jquery.png" alt="jQuery" class="responsive-img tooltipped" data-position="top"
-                    data-tooltip="jQuery" >
-            </div>
-            <div class="col s2">
-                <img src="./img/skills/Redux.png" alt="Redux" class="responsive-img tooltipped" data-position="top"
-                    data-tooltip="Redux">
-            </div>
-        </div>
-        
-        <ul class="collapsible">
-            <li>
-                <div class="collapsible-header" id="parent-text">
-                        <h4>Additional Skills <i id="child-text" class="next-badge material-icons" >add</i></h4>
+        <!-- Projects -->
+        <section class="container section scrollspy" id="projects">
+            <h4 class="title-info center-align ">Projects</h4>
+            <div class="row">
+                <div class="col s12 m6 l4 project-item-caption">
+                    <h5 class="center-align">Travel Buddy</h5>
+                    <a class="modal-trigger " href="#travel-buddy"> <img
+                            src="./img/projects/TravelBuddy/Travel_Landing.png" alt="Travel Buddy Screenshot"
+                            class="responsive-img"></a>
                 </div>
-                <div class="collapsible-body">
-                    <div class="base">
-                        <ul class="other-skills">
-                            <li>Express.js</li>
-                            <li>JSON</li>
-                            <li>Flask</li>
-                            <li>Jinja</li>
-                            <li>NPM</li>
-                            <li>Algorithms</li>
-                        </ul>
-                        <ul class="other-skills">
-                            <li>MailChimp</li>
-                            <li>Wireframing</li>
-                            <li>OfficeSuite</li>
-                            <li>CMR/AMS</li>
-                            <li>WordPress</li>
-                            <li>HootSuite</li>
-                        </ul>
-                        <ul class="other-skills">
-                            <li>balsamiq</li>
-                            <li>Trello</li>
-                            <li>Asana</li>
-                            <li>TimeCamp</li>
-                            <li>Canva</li>
-                            <li>Bilingual: Spanish & English </li>
-                        </ul>
+                <div class="col s12 m6 l4 project-item-caption">
+                    <h5 class="center-align">Squishy Tomatoes</h5>
+                    <a class="modal-trigger " href="#squishy-tomatoes"> <img
+                            src="./img/projects/SquishyTomatoes/Squishy_landing.png" alt="Todo App Screenshot"
+                            class="responsive-img"></a>
+                </div>
+                <div class="col s12 m6 l4 project-item-caption">
+                    <h5 class="center-align">Todo App</h5>
+                    <a class="modal-trigger " href="#todo-app"> <img src="./img/projects/nodeTodoApp/Todo_Landing.png"
+                            alt="Todo App Screenshot" class="responsive-img"></a>
+                </div>
+            </div>
+
+            <!-- Modals -->
+            <div id="travel-buddy" class="modal">
+                <div class="modal-content">
+                    <a href="#!"><i class="close-button modal-close medium material-icons">close</i></a>
+                    <h4 class="center-align">Python - Django</h4>
+                    <img src="./img/projects/TravelBuddy/Travel_Landing.png" alt="Travel Buddy App Screenshot"
+                        class="responsive-img">
+                    <img src="./img/projects//TravelBuddy/Travel_All.png" alt="Squishy Tomatoes App Screenshot"
+                        class="responsive-img">
+                    <p class="center-align">Collaboration web app that allows signed in users to plan and add, add/or
+                        remove their own scheduled
+                        trips and join other trips planned by other users as well</p>
+                    <p class="center-align">
+                        Tech: Python, Django, Bootstrap 4, SQLite, Responsive
+                    </p>
+
+                    <p><span>Last updated: 07-2018</span></p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://github.com/Exia01/Travel-Buddy" target="_blank"
+                        class="footer-text modal-close btn grey darken-2 waves">View On Github</a>
+                </div>
+            </div>
+
+            <div id="squishy-tomatoes" class="modal">
+                <div class="modal-content">
+                    <a href="#!"><i class="close-button modal-close medium material-icons">close</i></a>
+                    <h4 class="center-align">MEAN</h4>
+                    <img src="./img/projects/SquishyTomatoes/Squishy_landing.png" alt="Squishy Tomatoes App Screenshot"
+                        class="responsive-img">
+                    <img src="./img/projects/SquishyTomatoes/IMG2.png" alt="Squishy Tomatoes App Screenshot"
+                        class="responsive-img">
+                    <p class="center-align">Web app that allows users to create, read, update, and delete movies and
+                        reviews
+                    </p>
+                    <p class="center-align">
+                        Tech: Node.js, MongoDB, Bootstrap 4, Angular 6, RESTful, Responsive
+                    </p>
+                    <p><span>Last updated: 08-2018 </span></p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://github.com/Exia01/SquishyTomatoes" target="_blank"
+                        class="footer-text modal-close btn grey darken-2 waves">View
+                        On Github</a>
+                </div>
+            </div>
+
+            <div id="todo-app" class="modal">
+                <div class="modal-content">
+                    <a href="#!"><i class="close-button modal-close medium material-icons">close</i></a>
+                    <h4 class="center-align">Node</h4>
+                    <img src="./img/projects/nodeTodoApp/Todo_Landing.png" alt="Todo App Screenshot"
+                        class="responsive-img">
+                    <img src="./img/projects/nodeTodoApp/Todo_Img2.png" alt="Todo App Screenshot"
+                        class="responsive-img">
+                    <p class="center-align">Small scope Node/Express app | Allows user to create a "Todo" list</p>
+                    <p class="center-align">
+                        Tech: Node.js, MongoDB - Mlab, Express, Semi-RESTful
+                    </p>
+                    <p><span>Last updated: 09-2018 </span></p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://github.com/Exia01/Node-Todo-App" target="_blank"
+                        class="footer-text modal-close btn grey darken-2 waves">View
+                        On Github</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="section container skills-section scrollspy" id="skills">
+            <h3 class="title-info ">Skills</h3>
+
+            <img src="./img/skills/frontEndWebIcons.png" alt="HTML JavaScript CSS" class="responsive-img tooltipped"
+                data-position="top" data-tooltip="HTML JavaScript CSS">
+
+            <img src="./img/skills/bootstrap.png" alt="Bootstrap" class="responsive-img tooltipped" data-position="top"
+                data-tooltip="Bootstrap">
+
+            <img src="./img/skills/reactJS.png" alt="React" class="responsive-img tooltipped" data-position="top"
+                data-tooltip="React">
+
+            <img src="./img/skills/nodeJS.png" alt="Node.js" class="responsive-img tooltipped" data-position="top"
+                data-tooltip="Node.js">
+
+            <img src="./img/skills/MongoDB_Logo_.png" alt="MongoDB" class="responsive-img tooltipped"
+                data-position="top" data-tooltip="MongoDB">
+
+            <img src="./img/skills/GitHub-Mark.png" alt="Github" class="responsive-img tooltipped" data-position="top"
+                data-tooltip="GitHub">
+
+
+            <ul class="collapsible additional-skills">
+                <li>
+                    <div class="collapsible-header" id="parent-text">
+                        <h4>Additional Skills <i id="child-text" class="next-badge material-icons">add</i>
+                        </h4>
                     </div>
-                </div>
-            </li>
-        </ul>
+                    <div class="collapsible-body">
+                        <div class="base">
+                            <ul class="other-skills">
+                                <li>Express.js</li>
+                                <li>JSON</li>
+                                <li>Flask</li>
+                                <li>Jinja</li>
+                                <li>NPM</li>
+                                <li>Algorithms</li>
+                            </ul>
+                            <ul class="other-skills">
+                                <li>MailChimp</li>
+                                <li>Wireframing</li>
+                                <li>OfficeSuite</li>
+                                <li>CMR/AMS</li>
+                                <li>WordPress</li>
+                                <li>HootSuite</li>
+                            </ul>
+                            <ul class="other-skills">
+                                <li>balsamiq</li>
+                                <li>Trello</li>
+                                <li>Asana</li>
+                                <li>TimeCamp</li>
+                                <li>Canva</li>
+                                <li>Bilingual: Spanish & English </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </section>
 
 
         <!-- resume Modal -->
-    <div id="resume-show" class="modal" style="height: 100%;">
-        <div class="modal-content" style="height: 100%;">
-            <div class="right-align">
-                <a href="#!" class=" modal-close right-align waves-effect waves-light grey darken-2 btn white-text">Close<i
-                        class="material-icons right">clear</i></a>
+        <div id="resume-show" class="modal" style="height: 100%;">
+            <div class="modal-content" style="height: 100%;">
+                <div class="right-align">
+                    <a href="#!"
+                        class=" modal-close right-align waves-effect waves-light grey darken-2 btn white-text">Close<i
+                            class="material-icons right">clear</i></a>
+                </div>
+                <br>
+                <object type="application/pdf" data="_Resume_Jose_Gonzalez.pdf" style="width: 100%; height: 100%;">
+                </object>
             </div>
-            <br>
-            <object type="application/pdf" data="_Resume_Jose_Gonzalez.pdf" style="width: 100%; height: 100%;">
-            </object>
+
         </div>
-    
-    </div>
-    <!-- Resume Modal Test -->
-    <div id="resume-show2" class="modal">
-        <div class="modal-content">
+        <!-- Resume Modal Test -->
+        <div id="resume-show2" class="modal">
+            <div class="modal-content">
                 <!-- <a href="Resume_Jose_Gonzalez.pdf" target="_blank" class="btn-small btn-floating waves green darken-2"><i class="material-icons">cloud_download</i></a> -->
-            <a href="#!"><i class="close-button modal-close medium material-icons">close</i></a>
-            <h4 href="./_Resume_Jose_Gonzalez.pdf" class="center-align">Tech Resume</h4>
-            <img src="./img/resume/Resume_pg1.png" alt="Resume_pg1" class="responsive-img">
-            <img src="./img/resume/Resume_pg2.png" alt="Resume_pg2"  class="responsive-img">
-            
-            
-        </div>
-        <div class="modal-footer">
-            <a href="_Resume_Jose_Gonzalez.pdf" target="_blank" class="footer-text modal-close btn grey darken-2 waves">Download</a>
-           <!--  <a href="_Resume_Jose_Gonzalez.pdf" target="_blank" class="footer-text btn-floating pulse green darken-2"><i class="material-icons">cloud_download</i></a> -->
-        </div>
-    </div>
-    
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <a href="#" id="scroll" style="display: none;"><span></span></a>
+                <a href="#!"><i class="close-button modal-close medium material-icons">close</i></a>
+                <h4 href="./_Resume_Jose_Gonzalez.pdf" class="center-align">Tech Resume</h4>
+                <img src="./img/resume/Resume_pg1.png" alt="Resume_pg1" class="responsive-img">
+                <img src="./img/resume/Resume_pg2.png" alt="Resume_pg2" class="responsive-img">
 
-    <!-- Footer -->
-    <footer class="page-footer grey darken-3">
-        <!-- To center -->
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5>About Me</h5>
-                    <p>Team-oriented Full Stack Developer with extensive hands-on  experience in multiple stacks including Python, MEAN, Java and their respective frameworks.</p>
-                    <p>I love listening to philosophy podcasts and catching up with current events in my spare time.</p>
-                </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Connect</h5>
-                    <ul class="footer-nav">
-                        <li><a class="modal-trigger hvr-hang " href="#resume-show">Resume</a></li>
-                        <li><a href="https://www.linkedin.com/in/js-gonzalez/" target="_blank">LinkedIn</a></li>
-                        <li><a href="https://github.com/Exia01" target="_blank">Github</a></li>
-                        <li><a href="mailto:gonzalezj@protonmail.com?subject=Let%27s%20Connect%21" target="_blank">Contact</a></li>
-                    </ul>
-                </div>
+
+            </div>
+            <div class="modal-footer">
+                <a href="_Resume_Jose_Gonzalez.pdf" target="_blank"
+                    class="footer-text modal-close btn grey darken-2 waves">Download</a>
+                <!--  <a href="_Resume_Jose_Gonzalez.pdf" target="_blank" class="footer-text btn-floating pulse green darken-2"><i class="material-icons">cloud_download</i></a> -->
             </div>
         </div>
 
-        <div class="footer-copyright grey darken-2">
-            <div class="container center-align">&copy; Jose Gonzalez</div>
-        </div>
-    </footer>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-    crossorigin="anonymous"></script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
-    </script>
-    
-    <script src="./js/main.js"></script>
-</body>
+        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+        <a href="#" id="scroll" style="display: none;"><span></span></a>
+
+        <!-- Footer -->
+        <footer class="page-footer grey darken-3">
+            <!-- To center -->
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5>About Me</h5>
+                        <p>Team-oriented Full Stack Developer with extensive hands-on experience in multiple stacks
+                            including Python, MEAN, Java and their respective frameworks.</p>
+                        <p>I love listening to philosophy podcasts and catching up with current events in my spare time.
+                        </p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Connect</h5>
+                        <ul class="footer-nav">
+                            <li><a class="modal-trigger hvr-hang " href="#resume-show">Resume</a></li>
+                            <li><a href="https://www.linkedin.com/in/js-gonzalez/" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://github.com/Exia01" target="_blank">Github</a></li>
+                            <li><a href="mailto:gonzalezj@protonmail.com?subject=Let%27s%20Connect%21"
+                                    target="_blank">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copyright grey darken-2">
+                <div class="container center-align">&copy; Jose Gonzalez</div>
+            </div>
+        </footer>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+        </script>
+
+        <script src="./js/main.js"></script>
+    </body>
 
 </html>

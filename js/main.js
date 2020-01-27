@@ -11,9 +11,8 @@ $(document).ready(function() {
   $('.scrollspy').scrollSpy();
 
   // collapsible skills menu
-  $(document).ready(function() {
-    $('.collapsible').collapsible();
-  });
+  $('.collapsible').collapsible();
+
 
    // Scroll to top button appear
   $(window).scroll(function () {
@@ -68,4 +67,6 @@ $(document).ready(function() {
   $('.js-scroll-trigger').click(function() {
     $('.sidenav').sidenav('close');
   });
+
+  
 });

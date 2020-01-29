@@ -60,22 +60,22 @@
         </section>
 
         <!-- Projects -->
-        <section class="container section scrollspy" id="projects">
+        <section class="container section scrollspy " id="projects">
             <h4 class="title-info center-align ">Projects</h4>
-            <div class="row">
-                <div class="col s12 m6 l4 project-item-caption">
+            <div class="row projects-flex-container">
+                <div class="col s12 m6 l4 project-item-div">
                     <h5 class="center-align">Travel Buddy</h5>
                     <a class="modal-trigger " href="#travel-buddy"> <img
                             src="./img/projects/TravelBuddy/Travel_Landing.png" alt="Travel Buddy Screenshot"
                             class="responsive-img"></a>
                 </div>
-                <div class="col s12 m6 l4 project-item-caption">
+                <div class="col s12 m6 l4 project-item-div">
                     <h5 class="center-align">Squishy Tomatoes</h5>
                     <a class="modal-trigger " href="#squishy-tomatoes"> <img
                             src="./img/projects/SquishyTomatoes/Squishy_landing.png" alt="Todo App Screenshot"
                             class="responsive-img"></a>
                 </div>
-                <div class="col s12 m6 l4 project-item-caption">
+                <div class="col s12 m6 l4 project-item-div ">
                     <h5 class="center-align">Todo App</h5>
                     <a class="modal-trigger " href="#todo-app"> <img src="./img/projects/nodeTodoApp/Todo_Landing.png"
                             alt="Todo App Screenshot" class="responsive-img"></a>
@@ -158,8 +158,11 @@
             <img src="./img/skills/frontEndWebIcons.png" alt="HTML JavaScript CSS" class="responsive-img tooltipped"
                 data-position="top" data-tooltip="HTML JavaScript CSS">
 
-            <img src="./img/skills/bootstrap.png" alt="Bootstrap" class="responsive-img tooltipped" data-position="top"
-                data-tooltip="Bootstrap">
+            <img src="./img/skills/MongoDB_Logo_.png" alt="MongoDB" class="responsive-img tooltipped"
+                data-position="top" data-tooltip="MongoDB">
+
+            <img src="./img/skills/express.png" alt="Express" class="responsive-img tooltipped" data-position="top"
+                data-tooltip="Express">
 
             <img src="./img/skills/reactJS.png" alt="React" class="responsive-img tooltipped" data-position="top"
                 data-tooltip="React">
@@ -167,18 +170,28 @@
             <img src="./img/skills/nodeJS.png" alt="Node.js" class="responsive-img tooltipped" data-position="top"
                 data-tooltip="Node.js">
 
-            <img src="./img/skills/MongoDB_Logo_.png" alt="MongoDB" class="responsive-img tooltipped"
-                data-position="top" data-tooltip="MongoDB">
+            <img src="./img/skills/Redux.png" alt="Redux" class="responsive-img tooltipped" data-position="top"
+                data-tooltip="Redux">
+
+            <img src="./img/skills/bootstrap.png" alt="Bootstrap" class="responsive-img tooltipped" data-position="top"
+                data-tooltip="Bootstrap">
 
             <img src="./img/skills/GitHub-Mark.png" alt="Github" class="responsive-img tooltipped" data-position="top"
                 data-tooltip="GitHub">
 
+            <img src="./img/skills/python.png" alt="Python" class="responsive-img tooltipped" data-position="top"
+                data-tooltip="Python">
+
+            <img src="./img/skills/vsCode.jpg" alt="vsCode" class="responsive-img tooltipped last-icon"
+                data-position="top" data-tooltip="vsCode">
+
 
             <ul class="collapsible additional-skills">
                 <li>
-                    <div class="collapsible-header" id="parent-text">
-                        <h4>Additional Skills <i id="child-text" class="next-badge material-icons">add</i>
+                    <div class="collapsible-header additional-skills-header" id="parent-text">
+                        <h4>Additional Skills
                         </h4>
+                        <i id="child-text" class="next-badge material-icons">add</i>
                     </div>
                     <div class="collapsible-body">
                         <div class="base">
@@ -252,25 +265,30 @@
         <footer class="page-footer grey darken-3">
             <!-- To center -->
             <div class="container">
-                <div class="row">
-                    <div class="col l6 s12">
-                        <h5>About Me</h5>
-                        <p>Team-oriented Full Stack Developer with extensive hands-on experience in multiple stacks
-                            including Python, MEAN, Java and their respective frameworks.</p>
-                        <p>I love listening to philosophy podcasts and catching up with current events in my spare time.
-                        </p>
-                    </div>
-                    <div class="col l4 offset-l2 s12">
-                        <h5 class="white-text">Connect</h5>
-                        <ul class="footer-nav">
-                            <li><a class="modal-trigger hvr-hang " href="#resume-show">Resume</a></li>
-                            <li><a href="https://www.linkedin.com/in/js-gonzalez/" target="_blank">LinkedIn</a></li>
-                            <li><a href="https://github.com/Exia01" target="_blank">Github</a></li>
-                            <li><a href="mailto:gonzalezj@protonmail.com?subject=Let%27s%20Connect%21"
-                                    target="_blank">Contact</a></li>
-                        </ul>
-                    </div>
+                <div class="footer-grid-container">
+                    <ul class="footer-nav">
+                        <li>
+                            <a class="modal-trigger hvr-hang " href="#resume-show">
+                                <i class="fas fa-file-alt"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/js-gonzalez/" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li><a href="https://github.com/Exia01" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:gonzalezj@protonmail.com?subject=Let%27s%20Connect%21" target="_blank">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
+            </div>
             </div>
 
             <div class="footer-copyright grey darken-2">

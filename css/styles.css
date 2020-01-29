@@ -1,11 +1,14 @@
-nav ul.sidenav li>a {
+nav ul.sidenav li>a, footer a {
   color: #ffffff;
-}
-
-nav ul a,
-.sidenav li>a {
   transition: 0.3s ease-in;
 }
+
+
+
+/* nav ul a,
+.sidenav li>a {
+  transition: 0.3s ease-in;
+} */
 
 nav ul a:hover,
 .sidenav li>a:hover {
@@ -28,19 +31,157 @@ div.modal-content a i {
 
 section.skills-section {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 2em 3em;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em 2em;
   justify-items: center;
   align-items: center;
+
+  /* flex solution: */
+  /* display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap; */
+}
+
+section.skills-section img {
+  /* flex solution     */
+  /* width: 23%;
+  object-fit: scale-down;
+  max-width: 250px;
+  margin: 0 2%; */
 
 }
 
 section.skills-section h3 {
-  justify-self: center;
   grid-column: 1 / -1;
+
+  /* Flex Solution */
+  /* flex: 0 100%;
+  text-align: center; */
 }
 
 section.skills-section .additional-skills {
   grid-column: 1/-1;
   width: 100%;
 }
+
+div.additional-skills-header {
+  display: grid;
+  cursor: pointer;
+  grid-template-columns: 1fr 0fr;
+  align-items: baseline;
+  justify-items: center;
+}
+
+div.additional-skills-header i {
+  font-size: 2.0rem;
+
+}
+
+
+ul.additional-skills div.base {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+div.footer-grid-container {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+div.footer-grid-container .footer-nav{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-size: 2em;
+  gap: 0em 2em;
+  justify-items: center;
+}
+
+@media (max-width: 576px) {
+  ul.additional-skills div.base {
+    justify-items: initial;
+    align-items: initial;
+  }
+
+  nav .brand-logo {
+    font-size: 1.9rem;
+  }
+
+  section.skills-section img {
+    width: 75%;
+
+  }
+
+  .last-icon {
+    grid-column: 2;
+  }
+
+  ul.additional-skills div.collapsible-body {
+    padding: 2%;
+
+  }
+
+  ul.additional-skills div.collapsible-header h4 {
+    font-size: 1.9rem;
+    margin: auto 0;
+
+  }
+
+  div.base ul.other-skills {
+    font-size: 0.9 rem;
+  }
+
+}
+
+@media (min-width: 576px) {
+  .project-item-div {
+    margin: 0 auto;
+  }
+
+  div.projects-flex-container {
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  section.skills-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2em 3em;
+    justify-items: center;
+    align-items: center;
+
+  }
+
+}
+
+
+
+@media (min-width: 768px) {
+
+
+  section.skills-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3em 5em;
+    justify-items: center;
+    align-items: center;
+
+  }
+}
+
+
+@media (min-width: 992px) {
+  section.skills-section {
+    gap: 2em 10em;
+
+  }
+
+  div.additional-skills-header i {
+    font-size: 2.0rem;
+
+  }
+}
+
+
+@media (min-width: 1200px) {}

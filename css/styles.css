@@ -12,7 +12,7 @@ footer a {
 }
 
 a,
-a.btn {
+a.btn:not(".js-scroll-trigger") {
   transition: 0.3s ease-in;
 }
 
@@ -122,6 +122,41 @@ div.footer-grid-container .footer-nav {
   justify-items: center;
 }
 
+
+#scroll {
+  position: fixed;
+  right: 10px;
+  bottom: 7%;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(33, 37, 41, 0.5);
+  text-indent: -9999px;
+  display: none;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 10px;
+}
+
+#scroll span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -8px;
+  margin-top: -12px;
+  height: 0;
+  width: 0;
+  border: 8px solid transparent;
+  border-bottom-color: #ffffff;
+}
+
+#scroll:hover {
+  background-color: lightblue;
+  opacity: 1;
+  filter: 'alpha(opacity=100)';
+  -ms-filter: 'alpha(opacity=100)';
+}
+
 @media (max-width: 576px) {
   ul.additional-skills div.base {
     justify-items: initial;
@@ -174,36 +209,30 @@ div.footer-grid-container .footer-nav {
     gap: 2em 3em;
     justify-items: center;
     align-items: center;
-
   }
-
 }
 
 
-
 @media (min-width: 768px) {
-
-
   section.skills-section {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 3em 5em;
     justify-items: center;
     align-items: center;
-
+  }
+  a#scroll {
+    display: none !important;
   }
 }
-
 
 @media (min-width: 992px) {
   section.skills-section {
     gap: 2em 10em;
-
   }
 
   div.additional-skills-header i {
     font-size: 2.0rem;
-
   }
 }
 

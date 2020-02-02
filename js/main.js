@@ -16,7 +16,7 @@ $(document).ready(function() {
 
    // Scroll to top button appear
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 180) {
       $('#scroll').fadeIn();
     } else {
       $('#scroll').fadeOut();

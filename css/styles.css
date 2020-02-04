@@ -52,6 +52,15 @@ div.modal-content i {
   color: inherit;
 }
 
+section .projects-flex-container .project-item-div {
+  opacity: 1;
+  transition: .5s ease-in-out;
+}
+section .projects-flex-container .project-item-div:hover {
+  opacity: 0.5;
+}
+
+
 section.skills-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -221,6 +230,7 @@ div.footer-grid-container .footer-nav {
     justify-items: center;
     align-items: center;
   }
+
   a#scroll {
     display: none !important;
   }

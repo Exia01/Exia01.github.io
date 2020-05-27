@@ -4,18 +4,16 @@
   --darker-grey-color: #424242;
 }
 
-
-nav ul.sidenav li>a,
+nav ul.sidenav li > a,
 footer a {
   color: #ffffff;
   transition: 0.3s ease-in;
 }
 
 a,
-a.btn:not(".js-scroll-trigger") {
+a.btn:not('.js-scroll-trigger') {
   transition: 0.3s ease-in;
 }
-
 
 /* nav ul a,
 .sidenav li>a {
@@ -23,7 +21,7 @@ a.btn:not(".js-scroll-trigger") {
 } */
 
 nav ul a:hover,
-.sidenav li>a:hover,
+.sidenav li > a:hover,
 a:hover,
 div.modal-content a:hover,
 .additional-skills-header i:hover {
@@ -45,21 +43,39 @@ div.modal-content a i {
 }
 
 div.modal-content a {
-  color: var(--darker-grey-color)
+  color: var(--darker-grey-color);
 }
 
 div.modal-content i {
   color: inherit;
 }
 
+.adjusted-modal-image {
+  max-width: 95%;
+  margin: 0 auto;
+  display: block;
+  object-fit: contain;
+}
+
+div.modal-content.adjusted hr {
+  width: 85%;
+  margin: 0.8rem auto;
+}
 section .projects-flex-container .project-item-div {
   opacity: 1;
-  transition: .5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 section .projects-flex-container .project-item-div:hover {
   opacity: 0.5;
 }
 
+section .projects-flex-container .project-item-div a img {
+  max-height: 200px;
+  object-fit: contain;
+}
 
 section.skills-section {
   display: grid;
@@ -80,7 +96,6 @@ section.skills-section img {
   object-fit: scale-down;
   max-width: 250px;
   margin: 0 2%; */
-
 }
 
 section.skills-section h3 {
@@ -106,10 +121,8 @@ div.additional-skills-header {
 }
 
 div.additional-skills-header i {
-  font-size: 2.0rem;
-
+  font-size: 2rem;
 }
-
 
 ul.additional-skills div.base {
   display: grid;
@@ -130,7 +143,6 @@ div.footer-grid-container .footer-nav {
   gap: 0em 2em;
   justify-items: center;
 }
-
 
 #scroll {
   position: fixed;
@@ -178,7 +190,6 @@ div.footer-grid-container .footer-nav {
 
   section.skills-section img {
     width: 75%;
-
   }
 
   .last-icon {
@@ -187,19 +198,16 @@ div.footer-grid-container .footer-nav {
 
   ul.additional-skills div.collapsible-body {
     padding: 2%;
-
   }
 
   ul.additional-skills div.collapsible-header h4 {
     font-size: 1.9rem;
     margin: auto 0;
-
   }
 
   div.base ul.other-skills {
     font-size: 0.9 rem;
   }
-
 }
 
 @media (min-width: 576px) {
@@ -221,7 +229,6 @@ div.footer-grid-container .footer-nav {
   }
 }
 
-
 @media (min-width: 768px) {
   section.skills-section {
     display: grid;
@@ -234,6 +241,9 @@ div.footer-grid-container .footer-nav {
   a#scroll {
     display: none !important;
   }
+  .adjusted-modal-image {
+    max-width: 85%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -242,9 +252,12 @@ div.footer-grid-container .footer-nav {
   }
 
   div.additional-skills-header i {
-    font-size: 2.0rem;
+    font-size: 2rem;
+  }
+  .adjusted-modal-image {
+    max-width: 80%;
   }
 }
 
-
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+}
